@@ -1,3 +1,6 @@
+<?php
+require_once('config/strings.php');
+?>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -7,7 +10,7 @@
 <html>
 
 <head>
-	<title>Generic - Editorial by HTML5 UP</title>
+	<title>Generic - <?= $TITLE_BLOG ?> by <?= $AUTHOR ?></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,7 +26,7 @@
 			<div class="inner">
 
 				<?php
-				include('header.php');
+				include('includes/header.php');
 				?>
 
 				<!-- Content -->
@@ -32,7 +35,7 @@
 						<h1>Generic</h1>
 					</header>
 
-					<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+					<span class="image main"><img src="https://placekitten.com/1280/416" alt="" /></span>
 
 					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
@@ -61,25 +64,14 @@
 			</div>
 		</div>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-
-				<?php
-				include('search.php');
-				require_once('menu.php');
-				include('aside.php');
-				include('contact.php');
-				include('footer.php');
-				?>
-
-			</div>
-		</div>
+		<?php
+		require_once('includes/sidebar.php');
+		?>
 
 	</div>
 
 	<?php
-	require_once('scripts.php');
+	require_once('includes/scripts.php');
 	?>
 
 </body>

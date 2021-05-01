@@ -1,3 +1,6 @@
+<?php
+require_once('config/strings.php');
+?>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -23,7 +26,7 @@
 			<div class="inner">
 
 				<?php
-				include('header.php');
+				include('includes/header.php');
 				?>
 
 				<!-- Content -->
@@ -384,26 +387,26 @@
 							<h3>Image</h3>
 
 							<h4>Fit</h4>
-							<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
+							<span class="image fit"><img src="https://placekitten.com/1280/416" alt="" /></span>
 							<div class="box alt">
 								<div class="row gtr-50 gtr-uniform">
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=1" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=2" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=3" alt="" /></span></div>
 									<!-- Break -->
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=4" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=5" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=6" alt="" /></span></div>
 									<!-- Break -->
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=7" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=8" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="https://placekitten.com/416/256?image=9" alt="" /></span></div>
 								</div>
 							</div>
 
 							<h4>Left &amp; Right</h4>
-							<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image left"><img src="https://placekitten.com/416/256?image=10" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="https://placekitten.com/416/256?image=11" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 
 							<!-- Box -->
 							<h3>Box</h3>
@@ -432,25 +435,14 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			</div>
 		</div>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-
-				<?php
-				include('search.php');
-				require_once('menu.php');
-				include('aside.php');
-				include('contact.php');
-				include('footer.php');
-				?>
-
-			</div>
-		</div>
+		<?php
+		require_once('includes/sidebar.php');
+		?>
 
 	</div>
 
 	<?php
-	require_once('scripts.php');
+	require_once('includes/scripts.php');
 	?>
 
 </body>

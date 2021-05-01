@@ -1,3 +1,6 @@
+<?php
+require_once('config/strings.php');
+?>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -7,10 +10,16 @@
 <html>
 
 <head>
-	<title>Editorial by HTML5 UP</title>
+	<title><?= $TITLE_BLOG ?> by <?= $AUTHOR ?></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		.posts .image {
+			height: 246px;
+			object-fit: cover;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -23,31 +32,31 @@
 			<div class="inner">
 
 				<?php
-				include('header.php');
+				include('includes/header.php');
 				?>
 
 				<!-- Banner -->
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h1>Hi, I’m Editorial<br />
-								by HTML5 UP</h1>
+							<h1>I’m <?= $TITLE_BLOG ?><br />
+								by <?= $AUTHOR ?></h1>
 							<p>A free and fully responsive site template</p>
 						</header>
 						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
 						<ul class="actions">
-							<li><a href="#" class="button big">Learn More</a></li>
+							<li><a href="#" class="button big">Leia mais</a></li>
 						</ul>
 					</div>
 					<span class="image object">
-						<img src="images/pic10.jpg" alt="" />
+						<img src="https://placekitten.com/736/512" alt="" />
 					</span>
 				</section>
 
 				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Erat lacinia</h2>
+						<h2>Destaques</h2>
 					</header>
 					<div class="features">
 						<article>
@@ -84,55 +93,55 @@
 				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Ipsum sed dolor</h2>
+						<h2>Postagens</h2>
 					</header>
 					<div class="posts">
 						<article>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=1" alt="" /></a>
 							<h3>Interdum aenean</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=2" alt="" /></a>
 							<h3>Nulla amet dolore</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=3" alt="" /></a>
 							<h3>Tempus ullamcorper</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=4" alt="" /></a>
 							<h3>Sed etiam facilis</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=5" alt="" /></a>
 							<h3>Feugiat lorem aenean</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="https://placekitten.com/400/246?image=6" alt="" /></a>
 							<h3>Amet varius aliquam</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#" class="button">Mais</a></li>
 							</ul>
 						</article>
 					</div>
@@ -141,25 +150,14 @@
 			</div>
 		</div>
 
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-
-				<?php
-				include('search.php');
-				require_once('menu.php');
-				include('aside.php');
-				include('contact.php');
-				include('footer.php');
-				?>
-
-			</div>
-		</div>
+		<?php
+		require_once('includes/sidebar.php');
+		?>
 
 	</div>
 
 	<?php
-	require_once('scripts.php');
+	require_once('includes/scripts.php');
 	?>
 
 </body>
